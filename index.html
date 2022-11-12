@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS only -->
+
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container app-background">
+      <header>
+        <form id="citySearchForm">
+          <div class="input-group mb-3 city-search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="City Search"
+              aria-label="City"
+              aria-describedby="basic-addon2"
+              id="citySearchInput"
+            />
+            <button>
+              <span class="input-group-text" id="basic-addon2">Search</span>
+            </button>
+          </div>
+        </form>
+      </header>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="card current-weather">
+            <div class="card-body">
+              <h5
+                class="card-title current-weather-city"
+                id="displaySearchedCity"
+              ></h5>
+              <p class="card-text current-weather-text">
+                <span id="currentDate"></span>, <span id="description"></span>
+                <br />
+                Humidity: <span id="humidity"></span>%, Wind Speed:
+                <span id="windSpeed"></span>km/h
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card current-temperature-box">
+            <div class="card-body">
+              <h5 class="card-title">
+                ☀ <br />
+                <span class="high-temps">78°</span> / 72°
+                <br />
+                <span class="current-temperature" id="currentTemperature">
+                  75</span
+                ><span class="units" id="units"><sub>°C | °F</sub> </span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="row forecast">
+          <div class="col-sm-2 forecast-days">
+            Monday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  ☀ <br />
+                  <span class="high-temps">79°</span> / 73°
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 forecast-days">
+            Tuesday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  🌤 <br />
+                  <span class="high-temps">80°</span> / 74°
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 forecast-days">
+            Wednesday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  🌦 <br />
+                  <span class="high-temps">75°</span> / 68°
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 forecast-days">
+            Thursday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  🌩 <br />
+                  <span class="high-temps">74°</span> / 63°
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 forecast-days">
+            Friday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  ⛈ <br />
+                  <span class="high-temps">72°</span> / 60°
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 forecast-days">
+            Saturday
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title forecast-temps">
+                  🌥 <br />
+                  <span class="high-temps">76°</span> / 63°
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
