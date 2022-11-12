@@ -1,0 +1,67 @@
+body {
+  color: white;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.app-background {
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+  border: solid #e3e8fb;
+  border-radius: 30px;
+  margin: 20px auto 60px auto;
+  box-sizing: border-box;
+  display: block;
+  max-width: 600px;
+}
+.city-search {
+  padding-top: 10px;
+  width: 300px;
+  margin-top: 10px;
+}
+.current-weather {
+  width: 300px;
+  color: #7c73e6;
+}
+.current-weather-city {
+  color: #6643b5;
+}
+.current-weather-text {
+  color: #7c73e6;
+}
+.current-temperature-box {
+  width: 125px;
+  color: #7c73e6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.forecast {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.forecast-days {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #430f58;
+}
+.forecast-temps {
+  color: #7c73e6;
+  text-align: center;
+  font-size: 14px;
+}
+.high-temps {
+  font-weight: bold;
+}
+.current-temperature {
+  font-size: 30px;
+}
